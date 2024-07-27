@@ -1,9 +1,8 @@
-resource "aws_instance" "my_vm" {
- ami           = var.ami //Ubuntu AMI
- instance_type = var.instance_type
+resource "aws_s3_bucket" "terraform" {
+  bucket = "ci-cd-s3-bucket"
 
- tags = {
-   Name = var.name_tag,
- }
+  tags = {
+    Name = var.name_tag
+    Environment = "Dev"
+  }
 }
-
