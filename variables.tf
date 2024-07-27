@@ -1,17 +1,5 @@
-variable "ami" {
-   type        = string
-   description = "Ubuntu AMI ID in N. Virginia Region"
-   default     = "ami-065deacbcaac64cf2"
-}
-
-variable "instance_type" {
-   type        = string
-   description = "Instance type"
-   default     = "t2.micro"
-}
-
 variable "name_tag" {
    type        = string
-   description = "Name of the EC2 instance"
-   default     = "Jenkins EC2 Instance"
+   description = "Name of the S3 bucket"
+   default     = "Jenkins S3 Instance"
 }
