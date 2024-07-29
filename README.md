@@ -1,4 +1,4 @@
 # Terraform Jenkins assignment
 Test for Jenkins triggers
 
-note
+note env
